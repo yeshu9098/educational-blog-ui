@@ -68,12 +68,12 @@ const Home = () => {
                     <li className="nav-item">
                       <button className="nav-link btn btn-link text-dark" onClick={() => setView('quiz')}>Quiz</button>
                     </li>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                       <Link className="nav-link btn btn-link text-dark" to="/login">Login</Link>
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link btn btn-link text-dark" to="/admin">Admin</Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

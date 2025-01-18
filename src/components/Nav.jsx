@@ -9,7 +9,7 @@ const Nav = ({ setFilter, setView, resetPostView }) => {
   };
 
   return (
-    <div className="nav-container">
+    <div className="nav-container vh-100 d-flex flex-column bg-ligh">
       {/* Show only on large screens */}
       <div className="text-center py-3 d-none d-lg-block">
         <Link className='text-dark no-underline' to="/"><h3 style={{ fontWeight: 'bold' }}>Himachal <span style={{ color: 'green' }}>Academia</span></h3></Link>
@@ -23,8 +23,8 @@ const Nav = ({ setFilter, setView, resetPostView }) => {
         ))}
         <Link className="nav-link btn btn-link text-dark" onClick={() => setView('quiz')}>Quiz</Link>
         <Link className="nav-link btn btn-link text-dark" onClick={() => setView('about')}>About Us</Link>
-        <Link className="nav-link btn btn-link text-dark" to="/login">Login</Link>
-        <Link className="nav-link btn btn-link text-dark" to="/admin">Admin</Link>
+        {/* <Link className="nav-link btn btn-link text-dark" to="/login">Login</Link>
+        <Link className="nav-link btn btn-link text-dark" to="/admin">Admin</Link> */}
       </div>
     </div>
   );
